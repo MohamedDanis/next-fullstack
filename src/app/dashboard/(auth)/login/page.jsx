@@ -5,7 +5,7 @@ import { signIn, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
-function page() {
+function Page() {
   const router=useRouter()
   const session=useSession()
   if(session.status === "loading"){
@@ -66,4 +66,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
